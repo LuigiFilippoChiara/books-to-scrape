@@ -1,4 +1,4 @@
-name: books-to-scrape
+name: books-to-scrapy
 channels:
   - conda-forge
   - defaults
@@ -57,5 +57,5 @@ dependencies:
   - zlib=1.2.11=h0b31af3_1006
   - zope.interface=5.1.0=py36h37b9a7d_0
   - zstd=1.4.4=h1990bb4_3
-prefix: /opt/anaconda3/envs/books-to-scrape
+prefix: /opt/anaconda3/envs/books-to-scrapy
 
