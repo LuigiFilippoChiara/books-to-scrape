@@ -28,12 +28,12 @@ First of all, `fork` this repo and then `clone` your fork to have a local copy.
 To use [scrapy](https://scrapy.org) you first need to install it. You can create this project's environment with
 
 ```
-$ conda env create -f books-to-scrape.yml
+$ conda env create -f books-to-scrapy.yml
 ```
 and then activate it with
 
 ```
-$ conda activate books-to-scrape
+$ conda activate books-to-scrapy
 ```
   
 Alternatively, you can install scrapy directly by running
