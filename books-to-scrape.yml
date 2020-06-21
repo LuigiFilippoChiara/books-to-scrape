@@ -6,25 +6,32 @@ dependencies:
   - attrs=19.3.0=py_0
   - automat=20.2.0=py_0
   - bcrypt=3.1.7=py36h37b9a7d_1
-  - ca-certificates=2020.4.5.1=hecc5488_0
-  - certifi=2020.4.5.1=py36h9f0ad1d_0
+  - ca-certificates=2020.1.1=0
+  - certifi=2020.4.5.2=py36_0
   - cffi=1.14.0=py36h356ff06_0
   - constantly=15.1.0=py_0
   - cryptography=2.8=py36hc9d8292_2
   - cssselect=1.1.0=py_0
+  - freetype=2.10.2=ha233b18_0
   - hyperlink=19.0.0=pyh9f0ad1d_0
   - icu=64.2=h6de7cb9_1
   - idna=2.9=py_1
   - incremental=17.5.0=py_0
+  - jpeg=9b=he5867d9_2
   - libcxx=10.0.0=1
   - libffi=3.2.1=h4a8c4bd_1007
   - libiconv=1.15=h0b31af3_1006
+  - libpng=1.6.37=ha441bb4_0
+  - libtiff=4.1.0=hcb84e12_1
   - libxml2=2.9.10=h53d96d6_0
   - libxslt=1.1.33=h320ff13_0
   - lxml=4.5.0=py36h2ab0afd_1
+  - lz4-c=1.9.2=h0a44026_0
   - ncurses=6.1=h0a44026_1002
-  - openssl=1.1.1g=h0b31af3_0
+  - olefile=0.46=py36_0
+  - openssl=1.1.1g=h1de35cc_0
   - parsel=1.5.2=py_0
+  - pillow=7.1.2=py36h4655f20_0
   - pip=20.0.2=py_2
   - protego=0.1.16=py_0
   - pyasn1=0.4.8=py_0
@@ -49,5 +56,6 @@ dependencies:
   - xz=5.2.5=h0b31af3_0
   - zlib=1.2.11=h0b31af3_1006
   - zope.interface=5.1.0=py36h37b9a7d_0
+  - zstd=1.4.4=h1990bb4_3
 prefix: /opt/anaconda3/envs/books-to-scrape
 

@@ -2,15 +2,19 @@
 import scrapy
 from book_data_item.items import BookDataItem
 
-# this is a slightly more advanced spider
-# Instead of simply yielding a dictiornary, the BookPriceItem is implemented,
-# instantiated and returned
+# This is a slightly more advanced spider.
+# Instead of simply yielding a dictiornary, the BookDataItem is implemented,
+# instantiated and returned.
+
 
 class BookDataItemSpider(scrapy.Spider):
     name = 'book_data_item_spider'
     allowed_domains = ['books.toscrape.com']
-    start_urls = ['http://books.toscrape.com//']
     count = 0
+
+    def start_requests(self):
+        start_url = 'http://books.toscrape.com/'
+        yield scrapy.Request(start_url, self.parse)
 
     def parse(self, response):
         self.log(f"I just visited {response.url}")
@@ -26,7 +30,7 @@ class BookDataItemSpider(scrapy.Spider):
             item["price"] = article.css("p.price_color::text").get()
             item["stars"] = article.css("p::attr(class)").get().split(" ")[-1]
             item["thumbnail_path"] = article.css("div > a > img::attr(src)").get()
-            item["detail_book_url"] = article.css("div > a::attr(href)").get()
+            item["detailed_book_url"] = article.css("div > a::attr(href)").get()
 
             yield item
 

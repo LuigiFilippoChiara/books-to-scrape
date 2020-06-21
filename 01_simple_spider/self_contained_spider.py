@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-# the simplest possible scrapy program
+# The simplest possible scrapy program.
+
 
 class BookSpider(scrapy.Spider):
 	name = 'bookspider'

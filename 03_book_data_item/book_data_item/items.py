@@ -14,4 +14,4 @@ class BookDataItem(scrapy.Item):
     price = scrapy.Field()
     stars = scrapy.Field()
     thumbnail_path = scrapy.Field()
-    detail_book_url = scrapy.Field()
+    detailed_book_url = scrapy.Field()
