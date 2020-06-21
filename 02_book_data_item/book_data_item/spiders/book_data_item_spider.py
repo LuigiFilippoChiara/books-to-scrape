@@ -2,13 +2,12 @@
 import scrapy
 from book_data_item.items import BookDataItem
 
-
-# this is a simpler spider
+# this is a slightly more advanced spider
 # Instead of simply yielding a dictiornary, the BookPriceItem is implemented,
 # instantiated and returned
 
 class BookDataItemSpider(scrapy.Spider):
-    name = 'book_data_item'
+    name = 'book_data_item_spider'
     allowed_domains = ['books.toscrape.com']
     start_urls = ['http://books.toscrape.com//']
     count = 0
