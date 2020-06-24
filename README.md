@@ -9,7 +9,7 @@ We will use [scrapy](https://scrapy.org) to download text data and images from [
 
 This repository is divided into six independent directories: one self-contained scrapy spider and five scrapy projects.
 
-2. `01_simple_spider` contains a self-contained spider. When launched, it downloads book data (*title* and *price*) and crawls multiple web pages automatically.
+1. `01_simple_spider` contains a self-contained spider. When launched, it downloads book data (*title* and *price*) and crawls multiple web pages automatically.
 
 2. `02_book_data_dict` is the simplest possible scrapy project. It downloads book data (*item number, title, price* and *star rating*) yielding a simple Python dictionary.
 
